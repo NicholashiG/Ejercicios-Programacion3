@@ -34,6 +34,7 @@ public class Ejercicio {
 		// si está llena
 		if (llena) {
 			// comprueba si tiene más beneficio que otra
+			// únicamente compara el beneficio, mas no el peso óptimo
 			if (m_base.getBeneficio() > m_opt.getBeneficio()) {
 
 				Elemento[] elementosMochBase = m_base.getElementos();
