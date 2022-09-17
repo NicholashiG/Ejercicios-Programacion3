@@ -32,19 +32,22 @@ public class NumeroMenorArreglo {
 		if (inicio == fin) {
 			return arr[0];
 		} else {
-
+			if (fin > inicio) {
+				int div = arr.length / 2;
+				int menIzq = numeroMenorArreglo(Arrays.copyOfRange(arr, inicio, div), inicio, div-1);
+				int menDer = numeroMenorArreglo(Arrays.copyOfRange(arr, div, fin), div+1, fin);
+				if (menIzq < menDer) {
+					return menIzq;
+				} else {
+					return menDer;
+				}
+			}
 			// Buscar otra forma de dividir los arreglos, esta genera error en
 			// la recursividad
 
-			int div = arr.length / 2;
-			int menIzq = numeroMenorArreglo(Arrays.copyOfRange(arr, inicio, div), inicio, div);
-			int menDer = numeroMenorArreglo(Arrays.copyOfRange(arr, div, fin), div, fin);
-			if (menIzq < menDer) {
-				return menIzq;
-			} else {
-				return menDer;
-			}
+			
 		}
+		return 0;
 	}
 
 }
