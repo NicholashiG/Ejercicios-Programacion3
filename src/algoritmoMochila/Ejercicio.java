@@ -5,15 +5,22 @@ package algoritmoMochila;
 // Link del algoritmo: https://github.com/DiscoDurodeRoer/ejercicios-java-youtube/tree/master/recursividad/recursividad%2012
 
 public class Ejercicio {
+
+	/*
+	 * Enunciado: Queremos meter elementos en una mochila con un peso máximo, estos
+	 * elementos tienen un peso y un beneficio. Obtener la mejor combinacion que mas
+	 * beneficio nos dé y que no sobrepase el peso de la mochila.
+	 */
+
 	public static void main(String[] args) {
 
 		// Elemento tiene como constructor peso y beneficio
 		Elemento[] elementos0 = { new Elemento(1, 2), new Elemento(2, 3), new Elemento(3, 4), new Elemento(4, 5) };
 		Elemento[] elementos1 = { new Elemento(1, 1), new Elemento(2, 2), new Elemento(4, 10), new Elemento(1, 2),
 				new Elemento(12, 15) };
-		
+
 		Mochila m_base = new Mochila(15, elementos1.length); // Mochila base, irá cambiando respecto
-															// a los cambios hechos
+																// a los cambios hechos
 		Mochila m_opt = new Mochila(15, elementos1.length); // Mochila óptima, será la mejor de todas
 															// las mochilas creadas y comparadas
 
