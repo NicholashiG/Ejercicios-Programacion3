@@ -8,15 +8,16 @@ public class Ejercicio {
 	public static void main(String[] args) {
 
 		// Elemento tiene como constructor peso y beneficio
-		Elemento[] elementos = { new Elemento(1, 1), new Elemento(2, 2), new Elemento(4, 10), new Elemento(1, 2),
+		Elemento[] elementos0 = { new Elemento(1, 2), new Elemento(2, 3), new Elemento(3, 4), new Elemento(4, 5) };
+		Elemento[] elementos1 = { new Elemento(1, 1), new Elemento(2, 2), new Elemento(4, 10), new Elemento(1, 2),
 				new Elemento(12, 15) };
-
-		Mochila m_base = new Mochila(15, elementos.length); // Mochila base, irá cambiando respecto
+		
+		Mochila m_base = new Mochila(15, elementos1.length); // Mochila base, irá cambiando respecto
 															// a los cambios hechos
-		Mochila m_opt = new Mochila(15, elementos.length); // Mochila óptima, será la mejor de todas
+		Mochila m_opt = new Mochila(15, elementos1.length); // Mochila óptima, será la mejor de todas
 															// las mochilas creadas y comparadas
 
-		llenarMochila(m_base, elementos, false, m_opt);
+		llenarMochila(m_base, elementos1, false, m_opt);
 
 		System.out.println(m_opt);
 	}
