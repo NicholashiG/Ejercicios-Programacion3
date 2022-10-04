@@ -37,8 +37,8 @@ public class Main {
 		Empresa empresa = new Empresa("ACME", empleados, productos);
 		// Se guardan los valores en el archivo de texto correspondiente
 		
-		persistencia.guardarEmpleados(empleados);
-		persistencia.guardarProductos(productos);
+		persistencia.guardarEmpleados(empresa.getEmpleados());
+		persistencia.guardarProductos(empresa.getProductos());
 		
 		
 
