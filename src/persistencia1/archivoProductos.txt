@@ -1,0 +1,4 @@
+# Nombre producto: Arepa, ID: 1, valor: 500
+# Nombre producto: Pan, ID: 2, valor: 2000
+# Nombre producto: Achiras, ID: 3, valor: 400
+# Nombre producto: Agua, ID: 4, valor: 980
