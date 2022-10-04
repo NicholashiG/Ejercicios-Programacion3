@@ -3,17 +3,27 @@ package persistencia1;
 public class Empleado {
 
 	// Constructor
-	public Empleado(String nombre, String id) {
+	public Empleado(String nombre, String id, int sueldo) {
 		super();
 		this.nombre = nombre;
 		this.id = id;
+		this.sueldo = sueldo;
 	}
 
 	// Variables
 	private String nombre;
 	private String id;
+	private int sueldo;
 
 	// Getters y setters
+	public int getSueldo() {
+		return sueldo;
+	}
+
+	public void setSueldo(int sueldo) {
+		this.sueldo = sueldo;
+	}
+
 	public String getNombre() {
 		return nombre;
 	}
@@ -32,7 +42,7 @@ public class Empleado {
 
 	@Override
 	public String toString() {
-		return ("$ Nombre empleado: " + nombre + ", ID: " + id);
+		return ("$ Nombre empleado: " + nombre + ", ID: " + id + ", sueldo: " + sueldo);
 	}
 
 }

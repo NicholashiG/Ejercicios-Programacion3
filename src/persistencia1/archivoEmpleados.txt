@@ -1,3 +1,3 @@
-$ Nombre empleado: Juan, ID: 1
-$ Nombre empleado: Pedro, ID: 2
-$ Nombre empleado: Andres, ID: 3
+$ Nombre empleado: Juan, ID: 1, sueldo: 20000
+$ Nombre empleado: Pedro, ID: 2, sueldo: 12000
+$ Nombre empleado: Andres, ID: 3, sueldo: 9082

@@ -17,9 +17,9 @@ public class Main {
 
 
 		// Se crean los empleados
-		Empleado empleado1 = new Empleado("Juan", "1");
-		Empleado empleado2 = new Empleado("Pedro", "2");
-		Empleado empleado3 = new Empleado("Andres", "3");
+		Empleado empleado1 = new Empleado("Juan", "1", 20000);
+		Empleado empleado2 = new Empleado("Pedro", "2", 12000);
+		Empleado empleado3 = new Empleado("Andres", "3", 9082);
 		
 		// Se añaden los empleados y productos a la empresa
 		ArrayList<Producto> productos = new ArrayList<>(); 
